@@ -2,16 +2,18 @@ package com.project.savemoney;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TabHost.TabSpec;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends FragmentActivity implements OnClickListener {
 
 	private FragmentTransaction ft;
 	private FragmentManager fm;
@@ -20,7 +22,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	private Fragment3 fragment3;
 	private Fragment4 fragment4;
 	private Fragment5 fragment5;
-	private LinearLayout 		linear;
+	private LinearLayout linear;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		fragment4 = new Fragment4();
 		fragment5 = new Fragment5();
 		
-		fm = getFragmentManager();
+		
+		
+		fm = getSupportFragmentManager();
 		ft=fm.beginTransaction();
 		ft.replace(R.id.linear, fragment1);
 		ft.commit();
