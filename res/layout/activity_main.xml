@@ -8,58 +8,86 @@
     <LinearLayout
         android:id="@+id/linear"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="100"
+        android:layout_height="0dp"
+        android:layout_weight="9"
         android:orientation="vertical" >
-        
     </LinearLayout>
 
-    
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/bt_main"
-            android:layout_width="0dp"
+        android:background="#08000000"
+        android:orientation="vertical" >
+<View android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#22000000"/>
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="首页"
-            android:textSize="10sp" />
+            android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/bt_buy"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="购买兑换"
-            android:textSize="10sp" />
+            <RadioButton
+                android:id="@+id/bt_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/v2_icon_menu_home"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="#000000"
+                android:textSize="10sp" />
 
-        <Button
-            android:id="@+id/bt_yue"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="赚余额"
-            android:textSize="10sp" />
+            <RadioButton
+                android:id="@+id/bt_buy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/v2_icon_menu_home"
+                android:gravity="center"
+                android:text="购买兑换"
+                android:textColor="#000000"
+                android:textSize="10sp" />
 
-        <Button
-            android:id="@+id/bt_jiaoyiyue"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="交易查询"
-            android:textSize="10sp" />
+            <RadioButton
+                android:id="@+id/bt_yue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/v2_icon_menu_score"
+                android:gravity="center"
+                android:text="赚余额"
+                android:textColor="#000000"
+                android:textSize="10sp" />
 
-        <Button
-            android:id="@+id/bt_more"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="更多"
-            android:textSize="10sp" />
+            <RadioButton
+                android:id="@+id/bt_jiaoyiyue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/v2_icon_menu_home"
+                android:gravity="center"
+                android:text="交易查询"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/bt_more"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/v2_icon_menu_home"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </RadioGroup>
     </LinearLayout>
 
 </LinearLayout>
