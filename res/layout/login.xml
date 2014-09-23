@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="登录名" 
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="达人号/手机号/用户名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="登录密码" />
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="输入密码" 
+            android:imeOptions="actionGo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/login_bt_zhuce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="会员注册" 
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/login_bt_suibiankankan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="随便看看"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/login_bt_denglu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="登陆" 
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -29,19 +29,27 @@ public final class R {
     }
     public static final class id {
         public static final int Button1=0x7f08000c;
-        public static final int LinearLayout1=0x7f08000d;
+        public static final int LinearLayout1=0x7f080015;
         public static final int TextView1=0x7f080009;
-        public static final int action_settings=0x7f08000e;
+        public static final int action_settings=0x7f080016;
         public static final int bt_buy=0x7f080002;
         public static final int bt_jiaoyiyue=0x7f080004;
         public static final int bt_main=0x7f080001;
         public static final int bt_more=0x7f080005;
+        public static final int bt_register_ture=0x7f080014;
         public static final int bt_yue=0x7f080003;
+        public static final int et_login_password=0x7f08000e;
+        public static final int et_login_username=0x7f08000d;
+        public static final int et_regist_password=0x7f080013;
+        public static final int et_register_mobilephone=0x7f080012;
         public static final int guide_page1=0x7f080008;
         public static final int guide_page2=0x7f08000a;
         public static final int guide_page3=0x7f08000b;
         public static final int guidepages=0x7f080006;
         public static final int linear=0x7f080000;
+        public static final int login_bt_denglu=0x7f080011;
+        public static final int login_bt_suibiankankan=0x7f080010;
+        public static final int login_bt_zhuce=0x7f08000f;
         public static final int viewGroup=0x7f080007;
     }
     public static final class layout {
@@ -55,7 +63,9 @@ public final class R {
         public static final int guide_page1=0x7f030007;
         public static final int guide_page2=0x7f030008;
         public static final int guide_page3=0x7f030009;
-        public static final int welcome=0x7f03000a;
+        public static final int login=0x7f03000a;
+        public static final int register=0x7f03000b;
+        public static final int welcome=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f070000;

@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import android.widget.TabHost.TabSpec;
 
 public class MainActivity extends FragmentActivity implements OnClickListener {
@@ -43,8 +45,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		fragment3 = new Fragment3();
 		fragment4 = new Fragment4();
 		fragment5 = new Fragment5();
-		
-		
 		
 		fm = getSupportFragmentManager();
 		ft=fm.beginTransaction();
@@ -84,5 +84,25 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		}
 		ft.commit();
 	}
+	
+	//按两次返回键退出软件
+	private long exitTime = 0;
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK
+				&& event.getAction() == KeyEvent.ACTION_DOWN) {
+			if ((System.currentTimeMillis() - exitTime) > 2000) {
+				Toast.makeText(getApplicationContext(), "再按一次退出程序",
+						Toast.LENGTH_SHORT).show();
+				exitTime = System.currentTimeMillis();
+			} else {
+				finish();
+				System.exit(0);
+			}
+			return true;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+
 
 }

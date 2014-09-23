@@ -14,17 +14,26 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity android:name="com.project.savemoney.GuideActivity_1" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
         <activity android:name="com.project.savemoney.WelcomActivity" >
         </activity>
         <activity
             android:name="com.project.savemoney.MainActivity"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.project.loginandregister.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.loginandregister.RegisterActivity"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
     </application>
